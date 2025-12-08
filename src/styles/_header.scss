@@ -1,0 +1,32 @@
+.header_block{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px 0px;
+}
+
+.logo_block{
+    margin: 0px 0px;
+    color: black;
+    order: 1;
+    width: 15%;
+    cursor: pointer;
+}
+
+.button_block{
+    order: 2;
+    width: 60%;
+}
+
+.user_button_block{
+    order: 3;
+    padding: 12px 12px;
+}
+
+.user_button{
+    padding: 12px 12px;
+    border: 0px;
+    background: transparent;
+    cursor: pointer;
+}
