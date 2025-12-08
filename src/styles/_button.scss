@@ -1,3 +1,15 @@
+@use './variables' as v;
+
+@mixin button_color($type) {
+    @if $type == productList {
+      background-color: v.$primary_subtle;
+    } @else if $type == story {
+      background-color: v.$primary_border;
+    } @else {
+      background-color: v.$primary_default;
+    }
+}
+
 .menu_button{
     background: white;
     color: black;
@@ -5,4 +17,21 @@
     margin-right: 40px;
     border: 0px;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+        width: 50%;
+        margin-right: 0px;
+    }
+}
+
+.btn-product {
+    @media (max-width: 768px) {
+        @include button-color(productList);
+    }
+}
+
+.btn-story {
+    @media (max-width: 768px) {
+        @include button-color(story);
+    }
 }
