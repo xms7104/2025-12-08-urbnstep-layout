@@ -1,0 +1,28 @@
+.footer_block{
+    padding: 64px 0px 32px 0px;
+}
+
+.footer_menu_block{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 32px;
+}
+
+.footer_button_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hr_block{
+    width: 65%;
+    margin: 0 auto;
+}
+
+.text_block{
+    padding: 64px 0px 0px 0px;
+    font-size: 14px;
+    text-align: center;
+    color: #6C757D;
+}
