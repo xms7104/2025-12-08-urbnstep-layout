@@ -1,3 +1,5 @@
+@use './variables' as v;
+
 .header_block{
     width: 100%;
     display: flex;
@@ -7,8 +9,6 @@
 }
 
 .logo_block{
-    margin: 0px 0px;
-    color: black;
     order: 1;
     width: 15%;
     cursor: pointer;

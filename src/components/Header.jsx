@@ -1,11 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import Logo from '../assets/logo.svg';
 
 function Header(){
     return(
         <div className='header_block'>
             <div className='logo_block'>
-                <p>URBNSTEP</p>
+                <img src={Logo} alt='logo' />
             </div>
             <div className='user_button_block'>
                 <button className='user_button'>
