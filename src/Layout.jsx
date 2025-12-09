@@ -1,6 +1,6 @@
-import Header from './components/Header';
-import Footer from './components/Footer';
-import SalesList from './components/SalesList';
+import Header from './components/UI/Header';
+import Footer from './components/UI/Footer';
+import SalesList from './components/UI/SalesList';
 import { Outlet, useLocation } from 'react-router-dom';
 
 function Layout() {

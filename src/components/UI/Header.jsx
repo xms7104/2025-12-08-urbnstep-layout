@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
-import Logo from '../assets/logo.svg';
+import Logo from '../../assets/logo.svg';
 
 function Header(){
     return(

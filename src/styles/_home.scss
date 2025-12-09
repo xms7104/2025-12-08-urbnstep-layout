@@ -1,0 +1,52 @@
+@use './variables' as v;
+
+.banner_block{
+    background-image: url(#{v.$background_default});
+    background-size: cover;
+    background-position: center;
+    padding-top: 56.25%;
+    position: relative;
+
+    @media (max-width: 768px) {
+        background-image: url(#{v.$background_isTouchDivce});
+        padding-top: 100%;
+    }
+}
+
+.home_banner_text_block{
+    margin-bottom: 48px;
+}
+
+
+.home_text_block{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0%, -50%);
+}
+
+.home_title{
+    font-size: 64px;
+    font-weight: 700;
+    color: #FFF;
+    
+    @media (max-width: 768px) {
+        font-size: 48px;
+    }
+}
+
+.home_subTitle{
+    font-size: 28px;
+    font-weight: 700;
+    color: #FFF;
+    
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
+}
+
+.home_button{
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+}
