@@ -1,8 +1,9 @@
 @use './reset';
-@use './header';
-@use './button';
-@use './footer';
-@use './saleslist';
-@use './home';
-@use './banner';
-@use './newproduct';
+@use './ui/header';
+@use './ui/button';
+@use './ui/footer';
+@use './ui/saleslist';
+@use './home/home';
+@use './home/banner';
+@use './home/newproduct';
+@use './home/bestsellinglist';

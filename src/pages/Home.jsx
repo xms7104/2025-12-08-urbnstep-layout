@@ -1,5 +1,6 @@
-import Banner from "../components/UI/Home/Banner";
-import NewProduct from "../components/UI/Home/NewProduct";
+import Banner from "../components/Home/Banner";
+import NewProduct from "../components/Home/NewProduct";
+import BestSellingList from "../components/Home/BestSellingList";
 
 function Home(){
     return(
@@ -16,7 +17,14 @@ function Home(){
                     <NewProduct />
                 </div>
             </div>
-            <div></div>
+            <div className="bestselling_block">
+                <div className="bestselling_title">
+                    <p>熱銷補貨</p>
+                </div>
+                <div className="bestselling_card_block">
+                    <BestSellingList />
+                </div>
+            </div>
             <div></div>
             <div></div>
             <div></div>

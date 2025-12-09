@@ -1,4 +1,4 @@
-@use './variables' as v;
+@use '../variables' as v;
 .banner_block{
     background-image: url(#{v.$background_default});
     background-size: cover;
