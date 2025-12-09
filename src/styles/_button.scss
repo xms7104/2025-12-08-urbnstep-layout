@@ -1,0 +1,54 @@
+@use './variables' as v;
+
+@mixin button_color($type) {
+    @if $type == productList {
+      background-color: v.$primary_subtle;
+    } @else if $type == story {
+      background-color: v.$primary_border;
+    } @else {
+      background-color: v.$primary_default;
+    }
+}
+
+@mixin button_width($type) {
+    @if $type == header {
+        width: 50%;
+    } @else {
+        width: 100%;
+    }
+}
+
+.menu_button{
+    background: white;
+    color: black;
+    padding: 12px 0px;
+    width: 120px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.btn-product {
+    @media (max-width: 768px) {
+        @include button-color(productList);
+    }
+}
+
+.btn-story {
+    @media (max-width: 768px) {
+        @include button-color(story);
+    }
+}
+
+.btn-header{
+    @media (max-width: 768px) {
+        @include button_width(header);
+        margin-right: 0px;
+    }
+}
+
+.btn-footer{
+    @media (max-width: 768px) {
+        @include button_width(footer);
+        margin: 0px 12px;
+    }
+}
