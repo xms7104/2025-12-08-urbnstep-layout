@@ -1,16 +1,21 @@
+import Banner from "../components/UI/Home/Banner";
+import NewProduct from "../components/UI/Home/NewProduct";
+
 function Home(){
     return(
         <div>
             <div className="banner_block">
-                <div className="home_text_block">
-                    <div className="home_banner_text_block">
-                        <p className="home_title">URBNSTEP</p>
-                        <p className="home_subTitle">Your Step, Your Statement</p>
-                    </div>
-                    <button className="home_button">立即選購</button>
+                <Banner />
+            </div>
+            <div className="new_product_list_block">
+                <div className="new_product_text_block">
+                    <p className="new_product_title">New Arrival</p>
+                    <p className="new_product_subtitle">新品上市</p>
+                </div>
+                <div className="new_product_card_block">
+                    <NewProduct />
                 </div>
             </div>
-            <div></div>
             <div></div>
             <div></div>
             <div></div>
