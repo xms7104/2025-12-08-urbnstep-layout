@@ -6,13 +6,12 @@ function Footer(){
             <div className='footer_menu_block'>
                 <img src={Logo} alt='logo' />
                 <div className='footer_button_block'>
-                    <button className='menu_button'>商品列表</button>
-                    <button className='menu_button'>品牌故事</button>
+                    <button className='menu_button btn-footer'>商品列表</button>
+                    <button className='menu_button btn-footer'>品牌故事</button>
                 </div>
             </div>
-            <hr className='hr_block' />
             <div className='text_block'>
-                <p>Copyright ©2025 URBNSTYLE</p>
+                <p className='footer_text'>Copyright ©2025 URBNSTYLE</p>
                 <p>All Rights Reserved.</p>
             </div>
         </div>

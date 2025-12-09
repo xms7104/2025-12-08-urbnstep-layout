@@ -14,8 +14,8 @@ function Header(){
                 </button>
             </div>
             <div className='button_block'>
-                <button className='menu_button btn-product'>商品列表</button>
-                <button className='menu_button btn-story'>品牌故事</button>
+                <button className='menu_button btn-product btn-header'>商品列表</button>
+                <button className='menu_button btn-story btn-header'>品牌故事</button>
             </div>
         </div>
     )

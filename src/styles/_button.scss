@@ -10,19 +10,21 @@
     }
 }
 
+@mixin button_width($type) {
+    @if $type == header {
+        width: 50%;
+    } @else {
+        width: 100%;
+    }
+}
+
 .menu_button{
     background: white;
     color: black;
     padding: 12px 0px;
-    // margin-right: 40px;
     width: 120px;
     border: 0px;
     cursor: pointer;
-
-    @media (max-width: 768px) {
-        width: 50%;
-        margin-right: 0px;
-    }
 }
 
 .btn-product {
@@ -34,5 +36,19 @@
 .btn-story {
     @media (max-width: 768px) {
         @include button-color(story);
+    }
+}
+
+.btn-header{
+    @media (max-width: 768px) {
+        @include button_width(header);
+        margin-right: 0px;
+    }
+}
+
+.btn-footer{
+    @media (max-width: 768px) {
+        @include button_width(footer);
+        margin: 0px 12px;
     }
 }
