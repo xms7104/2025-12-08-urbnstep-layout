@@ -1,6 +1,7 @@
 import Banner from "../components/Home/Banner";
 import NewProduct from "../components/Home/NewProduct";
 import BestSellingList from "../components/Home/BestSellingList";
+import ADBanner from "../components/Home/ADBanner";
 
 function Home(){
     return(
@@ -25,7 +26,9 @@ function Home(){
                     <BestSellingList />
                 </div>
             </div>
-            <div></div>
+            <div className="ad_banner_block">
+                <ADBanner />
+            </div>
             <div></div>
             <div></div>
         </div>
