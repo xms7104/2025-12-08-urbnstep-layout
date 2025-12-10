@@ -1,0 +1,27 @@
+.productImage_block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 8px;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        justify-content: start;
+        scroll-padding: 50%;
+        scroll-snap-align: center;
+    }
+}
+
+.productImage_image{
+    width: 48%;
+    margin: 4px;
+
+    @media (max-width: 768px) {
+        flex: 0 0 100%;
+        scroll-snap-align: start;
+    }
+}

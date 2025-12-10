@@ -1,0 +1,10 @@
+.product_container_block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 768px) {
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
