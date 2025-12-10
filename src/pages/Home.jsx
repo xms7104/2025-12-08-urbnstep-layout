@@ -3,6 +3,7 @@ import NewProduct from "../components/Home/NewProduct";
 import BestSellingList from "../components/Home/BestSellingList";
 import ADBanner from "../components/Home/ADBanner";
 import ShopList from "../components/Home/ShopList";
+import OutfitGallery from "../components/Home/OutfitGallery";
 
 function Home(){
     return(
@@ -38,7 +39,14 @@ function Home(){
                     <ShopList />
                 </div>
             </div>
-            <div></div>
+            <div className="outfitgallery_block">
+                <div className="shoplist_title_block">
+                    <p className="shoplist_title">穿搭靈感</p>
+                </div>
+                <div className="outfitgallery_image_block">
+                    <OutfitGallery />
+                </div>
+            </div>
         </div>
     )
 }
