@@ -9,7 +9,7 @@ function BestSellingList(){
     return bestsellingImageArr.map((item, index) => {
         return(
             <div className="bestselling_card" key={index}>
-                <img className="bestselling_card_image" src={item} alt='productImage' />
+                <img className="bestselling_card_image" src={item} alt={`product` + index} />
                 <div className="bestselling_card_text_block">
                     <p className="bestselling_card_text">人氣 No.1</p>
                 </div>
