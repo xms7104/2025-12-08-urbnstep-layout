@@ -1,5 +1,12 @@
 @use './reset';
-@use './header';
-@use './button';
-@use './footer';
-@use './saleslist';
+@use './ui/header';
+@use './ui/button';
+@use './ui/footer';
+@use './ui/saleslist';
+@use './home/home';
+@use './home/banner';
+@use './home/newproduct';
+@use './home/bestsellinglist';
+@use './home/adbanner';
+@use './home/shoplist';
+@use './home/outfitgallery';

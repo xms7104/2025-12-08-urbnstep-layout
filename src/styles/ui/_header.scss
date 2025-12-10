@@ -1,4 +1,4 @@
-@use './variables' as v;
+@use '../variables' as v;
 
 .header_block{
     width: 100%;
@@ -9,6 +9,7 @@
 
     @media (max-width: 768px) {
         flex-wrap: wrap;
+        padding-bottom: 0px;
     }
     
 }

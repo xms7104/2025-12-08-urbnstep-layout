@@ -1,0 +1,70 @@
+.outfitgallery_block{
+    width: 93%;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        padding: 40px 12px;
+    }
+}
+
+.outfitgallery_image_block{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    grid-auto-flow: dense;
+    
+    @media (max-width: 768px) {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        grid-template-columns: unset;
+        grid-auto-flow: unset;
+        grid-auto-rows: unset;
+    }
+}
+
+.outfitgallery_image{
+    width: 100%;
+    height: 100%;
+
+    @media (max-width: 768px) {
+        flex: 0 0 auto;
+        width: 80%;
+    }
+}
+
+.outfitgallery_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @media (max-width: 768px) {
+        height: auto;
+        width: auto;
+        object-fit: contain;
+    }
+}
+
+.outfitgallery_image_top_right {
+    grid-column: 5 / span 2;
+    grid-row: 1 / span 2;
+
+    @media (max-width: 768px) {
+        grid-column: unset;
+        grid-row: unset;
+    }
+}
+  
+
+.outfitgallery_image_bottom_left {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+
+    @media (max-width: 768px) {
+        grid-column: unset;
+        grid-row: unset;
+    }
+}

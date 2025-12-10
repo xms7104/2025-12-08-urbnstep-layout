@@ -1,0 +1,147 @@
+@use '../variables' as v;
+
+.ad_banner_block{
+    position: relative;
+    background-image: url(#{v.$background_ad_banner_default});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 1748 / 450;
+    @media (max-width: 768px) {
+        background-image: url(#{v.$background_ad_banner_isTouchDivce});
+        aspect-ratio: 20 / 12;
+    }
+}
+
+.ad_banner_container_block{
+    padding: 100px 0px;
+
+    @media (max-width: 768px) {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 64px 12px;
+    }
+}
+
+.ad_banner_title{
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+
+    @media (max-width: 768px) {
+        font-size: 32px;
+    }
+}
+
+.ad_banner_symbol{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0px 24px;
+    color: #57A203;
+    
+
+    @media (max-width: 768px) {
+        font-size: 28px;
+        margin: 0px 8px;
+    }
+}
+
+.ad_banner_title_block{
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 768px) {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.ad_banner_subtitle{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: #fff;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+}
+
+.ad_banner_description_block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 48px;
+
+    @media (max-width: 768px) {
+        display: grid;
+        margin-bottom: 32px;
+    }
+}
+
+.ad_banner_description{
+    font-size: 20px;
+    font-weight: 400;
+    color: #ADB5BD;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+        margin: 2px 0px;
+    }
+}
+
+.ad_banner_description_symbol{
+    font-size: 20px;
+    font-weight: 400;
+    color: #ADB5BD;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        display: none;
+        
+    }
+}
+
+.ad_banner_button_block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ad_banner_button{
+    color: black;
+    background-color: #57A203;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.ad_star_block{
+    position: absolute;
+    top: 8%;
+    left: 17%;
+    @media (max-width: 768px) {
+        top: 6%;
+        left: 17%;
+    }
+}
+
+.ad_star_sparkle{
+    position: absolute;
+    bottom: 12%;
+    right: 21%;
+    @media (max-width: 768px) {
+        bottom: 0%;
+        right: 13%;
+    }
+}
