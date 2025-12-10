@@ -32,16 +32,16 @@ function Home(){
                 <ADBanner />
             </div>
             <div className="shoplist_block">
-                <div className="shoplist_title_block">
-                    <p className="shoplist_title">依系列選購</p>
+                <div className="title_block">
+                    <p className="title">依系列選購</p>
                 </div>
                 <div className="shoplist_card_block">
                     <ShopList />
                 </div>
             </div>
             <div className="outfitgallery_block">
-                <div className="shoplist_title_block">
-                    <p className="shoplist_title">穿搭靈感</p>
+                <div className="title_block">
+                    <p className="title">穿搭靈感</p>
                 </div>
                 <div className="outfitgallery_image_block">
                     <OutfitGallery />
