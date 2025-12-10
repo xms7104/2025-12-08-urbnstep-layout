@@ -2,6 +2,7 @@ import Banner from "../components/Home/Banner";
 import NewProduct from "../components/Home/NewProduct";
 import BestSellingList from "../components/Home/BestSellingList";
 import ADBanner from "../components/Home/ADBanner";
+import ShopList from "../components/Home/ShopList";
 
 function Home(){
     return(
@@ -29,7 +30,14 @@ function Home(){
             <div className="ad_banner_block">
                 <ADBanner />
             </div>
-            <div></div>
+            <div className="shoplist_block">
+                <div className="shoplist_title_block">
+                    <p className="shoplist_title">依系列選購</p>
+                </div>
+                <div className="shoplist_card_block">
+                    <ShopList />
+                </div>
+            </div>
             <div></div>
         </div>
     )
