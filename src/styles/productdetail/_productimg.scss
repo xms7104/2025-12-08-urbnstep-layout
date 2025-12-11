@@ -4,6 +4,7 @@
     align-items: center;
     flex-wrap: wrap;
     width: 50%;
+    margin-right: 24px;
 
     @media (max-width: 768px) {
         flex-wrap: nowrap;
@@ -14,6 +15,7 @@
         justify-content: start;
         scroll-padding: 50%;
         scroll-snap-align: center;
+        margin-right: 0px;
     }
 }
 

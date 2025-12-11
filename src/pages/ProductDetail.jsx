@@ -1,9 +1,13 @@
+import { useState } from "react";
 import ProductImage from "../components/ProductDetail/ProductImg";
 import ProductCategoryList from "../components/UI/ProductCategoryList";
 import ProductDescription from "../components/ProductDetail/ProductDescription";
+import ProductOptions from "../components/ProductDetail/ProductOptions";
+import ProductSizeOptions from "../components/ProductDetail/ProductSizeOptions";
 
 function ProductDetail(){
     const categoryList = ['首頁', '女鞋', '滑板鞋', 'Platform 404'];
+    const [stock, setStock] = useState(1);
 
     return(
         <div>
@@ -11,11 +15,26 @@ function ProductDetail(){
                 <div className="productImage_block">
                     <ProductImage />
                 </div>
-                <div>
-                    <div className="product_category_list_category_text_block">
-                        <ProductCategoryList categoryArr={categoryList} />
+                <div className="product_text_block">
+                    <div>
+                        <div className="product_category_list_category_text_block">
+                            <ProductCategoryList categoryArr={categoryList} />
+                        </div>
+                        <ProductDescription />
                     </div>
-                    <ProductDescription />
+                    <div className="productoption_options_block">
+                        <p className="product_subtitle">顏色</p>
+                        <div className="productoption_options_card">
+                            <ProductOptions />
+                        </div>
+                    </div>
+                    <div className="product_size_block">
+                        <p className="product_subtitle">尺寸</p>
+                        <div className="">
+                            <ProductSizeOptions setStock={setStock} />
+                        </div>
+                        {stock <= 3 && (<p className="product_warning_text">僅剩{stock}雙</p>)}
+                    </div>
                 </div>
             </div>
             <div>下</div>
