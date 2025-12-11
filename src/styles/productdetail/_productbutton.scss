@@ -1,0 +1,44 @@
+@mixin button_style($type) {
+    @if $type == addCollect {
+        background-color: #000;
+        color: #fff;
+    } @else {
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+.product_button_block{
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product_button{
+    border: 1px solid #000;
+    width: 49%;
+    border-radius: 4px;
+    padding: 12px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.product_button{
+    @include button_style(store);
+}
+
+.product_button_addCollect{
+    @include button_style(addCollect);
+    &:hover {
+        @include button_style(store);
+    }
+}
+
+.product_text{
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 4px;
+}

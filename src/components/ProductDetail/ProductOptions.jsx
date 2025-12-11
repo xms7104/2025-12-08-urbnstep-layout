@@ -7,7 +7,7 @@ function ProductOptions(){
   return optionsList.map((item, index) => {
     return(
         <div key={index} className="productoption_options_card_block">
-            <div className="productoption_options_image_block" tabindex="0">
+            <div className="productoption_options_image_block" tabIndex="0">
                 <img className="productoption_options_image" src={item.image} />
             </div>
             <p className="productoption_options_text">{item.color}</p>

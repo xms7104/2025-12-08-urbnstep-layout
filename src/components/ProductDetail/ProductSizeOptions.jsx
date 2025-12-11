@@ -20,7 +20,8 @@ function ProductSizeOptions({setStock}){
                 }else{
                     setStock(999);
                 }
-                }}>
+                }}
+                onBlur={() => {setStock(999);}}>
                 <p>{item.text}</p>
             </button>
         )

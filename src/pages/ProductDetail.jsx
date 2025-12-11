@@ -4,10 +4,12 @@ import ProductCategoryList from "../components/UI/ProductCategoryList";
 import ProductDescription from "../components/ProductDetail/ProductDescription";
 import ProductOptions from "../components/ProductDetail/ProductOptions";
 import ProductSizeOptions from "../components/ProductDetail/ProductSizeOptions";
+import ProductButton from "../components/ProductDetail/ProductButton";
 
 function ProductDetail(){
     const categoryList = ['首頁', '女鞋', '滑板鞋', 'Platform 404'];
     const [stock, setStock] = useState(1);
+    const [isCollect, setIsCollect] = useState(false);
 
     return(
         <div>
@@ -33,7 +35,10 @@ function ProductDetail(){
                         <div className="">
                             <ProductSizeOptions setStock={setStock} />
                         </div>
-                        {stock <= 3 && (<p className="product_warning_text">僅剩{stock}雙</p>)}
+                        {stock <= 3 && (<p className="product_warning_text">僅剩 {stock} 雙</p>)}
+                    </div>
+                    <div className="product_button_block">
+                        <ProductButton isCollect={isCollect} setIsCollect={setIsCollect} />
                     </div>
                 </div>
             </div>
