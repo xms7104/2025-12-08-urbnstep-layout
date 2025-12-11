@@ -1,0 +1,74 @@
+.productoption_options_block{
+    margin-bottom: 32px;
+    @media (max-width: 768px) {
+        margin-bottom: 24px;
+    }
+}
+
+
+.productoption_options_card{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 32px;
+    cursor: pointer;
+    @media (max-width: 768px) {
+        margin-bottom: 24px;
+    }
+}
+
+.productoption_options_title{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+
+.productoption_options_card_block{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.productoption_options_image{
+    width: 64px;
+}
+
+.productoption_options_image_block{
+    margin-bottom: 4px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.productoption_options_image_block::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none; /* 不阻擋滑鼠 */
+  }
+  
+  /* hover 時讓遮罩顯示 */
+  .productoption_options_image_block:hover::after {
+    opacity: 1;
+  }
+  
+  /* focus 時的邊框 */
+  .productoption_options_image_block:focus {
+    outline: none; /* 先移除原本藍色 outline */
+    border: 2px solid #000;
+  }
+
+.productoption_options_text{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #6C757D;
+}
