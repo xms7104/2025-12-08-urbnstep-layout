@@ -5,6 +5,7 @@ import ProductDescription from "../components/ProductDetail/ProductDescription";
 import ProductOptions from "../components/ProductDetail/ProductOptions";
 import ProductSizeOptions from "../components/ProductDetail/ProductSizeOptions";
 import ProductButton from "../components/ProductDetail/ProductButton";
+import ProductInformation from "../components/ProductDetail/ProductInformation";
 
 function ProductDetail(){
     const categoryList = ['首頁', '女鞋', '滑板鞋', 'Platform 404'];
@@ -39,6 +40,9 @@ function ProductDetail(){
                     </div>
                     <div className="product_button_block">
                         <ProductButton isCollect={isCollect} setIsCollect={setIsCollect} />
+                    </div>
+                    <div className="product_information">
+                        <ProductInformation />
                     </div>
                 </div>
             </div>
