@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
 import Logo from '../../assets/logo.svg';
 import { useLocation } from 'react-router-dom';
 import useIsTouchDevice from '../../hook/useInTouchDevice';
@@ -16,7 +14,7 @@ function Header(){
             </div>
             <div className='user_button_block'>
                 <button className='user_button'>
-                    <FontAwesomeIcon icon={faUser} size='xl' />
+                    <i className="bi bi-person"></i>
                 </button>
             </div>
             {!showMenuButton && (
