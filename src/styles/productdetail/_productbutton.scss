@@ -1,0 +1,62 @@
+@mixin button_style($type) {
+    @if $type == addCollect {
+        background-color: #000;
+        color: #fff;
+    } @else {
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+
+.product_button_block{
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 768px) {
+        flex-direction: row-reverse;
+    }
+}
+
+.product_button{
+    border: 1px solid #000;
+    width: 49%;
+    border-radius: 4px;
+    padding: 12px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #fff;
+
+    @media (max-width: 768px) {
+        @include button_style(addCollect);
+        width: 80%;
+    }
+}
+
+.product_button_addCollect{
+    @include button_style(addCollect);
+    &:hover {
+        @include button_style(store);
+    }
+}
+
+.product_text{
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+.product_text_collect_touchdevice{
+    display: none;
+}
+
+.product_button_collect_touchdevice{
+    padding: 12px;
+    width: 20%;
+    border: 0px;
+    background: transparent;
+    cursor: pointer;
+}

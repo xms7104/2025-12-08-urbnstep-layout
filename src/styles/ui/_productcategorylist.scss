@@ -1,0 +1,25 @@
+.product_category_list_category_text_block{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.product_category_list_text{
+    font-size: 16px;
+    font-weight: 500;
+    color: #6C757D;
+    margin:0px 6px;
+    @media (max-width: 768px) {
+        font-size: 14px;
+        margin:0px 4px;
+    }
+}
+
+.product_category_list_current_text{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
