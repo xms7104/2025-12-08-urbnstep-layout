@@ -1,14 +1,14 @@
 function ProductSizeOptions({setStock}){
     const sizeList = [
-        {text: '35 ( 22.5 cm )', count: 3},
-        {text: '36 ( 23.0 cm )', count: 6},
-        {text: '37 ( 23.5 cm )', count: 2},
-        {text: '38 ( 24.0 cm )', count: 4},
-        {text: '39 ( 24.5 cm )', count: 4},
-        {text: '40 ( 25.0 cm )', count: 2},
-        {text: '41 ( 26.0 cm )', count: 1},
-        {text: '42 ( 26.5 cm )', count: 0},
-        {text: '43 ( 27.0 cm )', count: 0}
+        {enSize: '35', cnSize:'22.5 cm', count: 3},
+        {enSize: '36', cnSize:'23.0 cm', count: 6},
+        {enSize: '37', cnSize:'23.5 cm', count: 2},
+        {enSize: '38', cnSize:'24.0 cm', count: 4},
+        {enSize: '39', cnSize:'24.5 cm', count: 4},
+        {enSize: '40', cnSize:'25.0 cm', count: 2},
+        {enSize: '41', cnSize:'26.0 cm', count: 1},
+        {enSize: '42', cnSize:'26.5 cm', count: 0},
+        {enSize: '43', cnSize:'27.0 cm', count: 0}
     ];
 
     return sizeList.map((item, index) => {
@@ -22,7 +22,10 @@ function ProductSizeOptions({setStock}){
                 }
                 }}
                 onBlur={() => {setStock(999);}}>
-                <p>{item.text}</p>
+                    <div className="product_size_option_text_block">
+                        <p>{item.enSize}</p>
+                        <p>({item.cnSize})</p>
+                    </div>
             </button>
         )
     })

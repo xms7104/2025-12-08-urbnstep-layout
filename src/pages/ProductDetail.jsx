@@ -6,10 +6,11 @@ import ProductOptions from "../components/ProductDetail/ProductOptions";
 import ProductSizeOptions from "../components/ProductDetail/ProductSizeOptions";
 import ProductButton from "../components/ProductDetail/ProductButton";
 import ProductInformation from "../components/ProductDetail/ProductInformation";
+import ProductRecommendList from "../components/ProductDetail/ProductRecommendList";
 
 function ProductDetail(){
     const categoryList = ['首頁', '女鞋', '滑板鞋', 'Platform 404'];
-    const [stock, setStock] = useState(1);
+    const [stock, setStock] = useState(999);
     const [isCollect, setIsCollect] = useState(false);
 
     return(
@@ -33,7 +34,7 @@ function ProductDetail(){
                     </div>
                     <div className="product_size_block">
                         <p className="product_subtitle">尺寸</p>
-                        <div className="">
+                        <div>
                             <ProductSizeOptions setStock={setStock} />
                         </div>
                         {stock <= 3 && (<p className="product_warning_text">僅剩 {stock} 雙</p>)}
@@ -46,7 +47,14 @@ function ProductDetail(){
                     </div>
                 </div>
             </div>
-            <div>下</div>
+            <div className="recommend_block">
+                <div>
+                    <p className="recommend_title">你可能也喜歡...</p>
+                </div>
+                <div className="recommend_product_block">
+                    <ProductRecommendList />
+                </div>
+            </div>
         </div>
     )
 }
