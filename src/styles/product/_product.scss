@@ -1,0 +1,38 @@
+.product_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+
+    @media (max-width: 768px) {
+        display: grid;
+        width: 95%;
+    }
+}
+
+.product_category_list_block{
+    margin: 32px 0px 24px 0px;
+
+    @media (max-width: 768px) {
+        margin: 16px 0px 12px 0px;
+    }
+}
+
+.title_block{
+    padding: 7px 0px;
+    margin-bottom: 24px;
+
+    @media (max-width: 768px) {
+        padding: 9.5px 0px;
+        margin-bottom: 12px;
+    }
+}
+
+.title_text{
+    font-size: 28px;
+    font-weight: 700;
+
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
+}

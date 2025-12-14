@@ -1,0 +1,32 @@
+.menulist_block{
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    padding-right: 24px;
+    margin-right: 24px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.menu_button{
+    background-color: transparent;
+    border: 0px;
+    padding: 8px 0px;
+    margin-bottom: 20px;
+}
+
+.menu_button_text{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    text-align: start;
+}
+
+.menu_button_text_focus{
+    font-size: 16px;
+    font-weight: 500;
+    color: #57A203;
+    text-align: start;
+}
