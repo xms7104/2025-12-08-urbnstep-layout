@@ -1,8 +1,12 @@
+.product_block{
+   width: 85%;
+   margin: 0 auto;
+}
+
 .product_container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 85%;
+    align-items: start;
 
     @media (max-width: 768px) {
         display: grid;
