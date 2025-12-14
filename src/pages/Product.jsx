@@ -24,8 +24,13 @@ function Product(){
                 <div className="menulist_block">
                     <MenuList currentCategory={currentCategory} setCurrentCategory={setCurrentCategory} />
                 </div>
-                <div className="product_list_block">
-                    <ProductList />
+                <div>
+                    <div className="product_list_block">
+                        <ProductList />
+                    </div>
+                    <div>
+                        <Pagination />
+                    </div>
                 </div>
             </div>
         </div>
