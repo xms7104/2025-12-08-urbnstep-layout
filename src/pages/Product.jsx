@@ -7,6 +7,7 @@ import Pagination from "../components/Product/Pagination";
 function Product(){
     const [categoryList, setCategoryList] = useState(['首頁', '女鞋', '所有商品']);
     const [currentCategory, setCurrentCategory] = useState('所有商品');
+    const [page, setPage] = useState(1);
 
     useEffect(() => {
         setCategoryList(prev => [...prev.slice(0, prev.length - 1), currentCategory]);
@@ -29,7 +30,7 @@ function Product(){
                         <ProductList />
                     </div>
                     <div>
-                        <Pagination />
+                        <Pagination page={page} setPage={setPage} />
                     </div>
                 </div>
             </div>

@@ -1,5 +1,8 @@
+import useIsTouchDevice from "../../hook/useInTouchDevice";
+
 function ProductList(){
-    const productData = [
+    const isTouchDevice = useIsTouchDevice();
+    const productAllData = [
         {image: 'https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product.png', title: 'PLATFORM 404', price: '2600'},
         {image: 'https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-1.png', title: 'PLATFORM 404', price: '2600'},
         {image: 'https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-2.png', title: 'VM001', price: '2600'},
@@ -11,6 +14,8 @@ function ProductList(){
         {image: 'https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-8.png', title: 'Neofoam', price: '4000'},
         {image: 'https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-9.png', title: 'Buttermood', price: '4000'}
     ];
+
+    const productData = isTouchDevice ? productAllData : productAllData.slice(0,9)
 
     return productData.map((item, index) => {
         return (

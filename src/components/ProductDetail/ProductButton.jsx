@@ -2,7 +2,7 @@
 import useIsTouchDevice from '../../hook/useInTouchDevice';
 
 function ProductButton({isCollect, setIsCollect}){
-    <i class="bi bi-bag"></i>
+    <i className="bi bi-bag"></i>
     const isTouchDevice = useIsTouchDevice();
     const btnList = [
         {   
