@@ -7,7 +7,7 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/2025-12-08-urbnstep-layout">
       <App />
     </BrowserRouter>
   </StrictMode>
