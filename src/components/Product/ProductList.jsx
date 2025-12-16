@@ -1,4 +1,5 @@
 import useIsTouchDevice from "../../hook/useInTouchDevice";
+import { Link } from "react-router-dom";
 
 function ProductList(){
     const isTouchDevice = useIsTouchDevice();
@@ -19,13 +20,15 @@ function ProductList(){
 
     return productData.map((item, index) => {
         return (
-        <div key={index} className="product_list_card_block">
-            <img src={item.image} className="product_list_card_image" />
-            <div className="product_list_card_text_block">
-                <p className="product_list_card_title">{item.title}</p>
-                <p className="product_list_card_subtitle">{item.price}</p>
+            <div key={index} className="product_list_card_block">
+                <Link to='/productDetail'>
+                    <img src={item.image} className="product_list_card_image" />
+                    <div className="product_list_card_text_block">
+                        <p className="product_list_card_title">{item.title}</p>
+                        <p className="product_list_card_subtitle">{item.price}</p>
+                    </div>
+                </Link>
             </div>
-        </div>
     )})
 }
 
