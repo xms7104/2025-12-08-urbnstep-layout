@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import ProductDetail from "./pages/ProductDetail"
 import Product from "./pages/Product"
 import NotFound from "./pages/NotFound"
+import Collect from "./pages/Collect"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/productDetail" element={<ProductDetail />} />
         <Route path="/product" element={<Product />} />
+        <Route path="/collect" element={<Collect />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
