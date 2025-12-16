@@ -1,0 +1,14 @@
+.notfound_block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.notfound_image{
+    width: 40%;
+
+    @media (max-width: 768px) {
+        width: 80%;
+    }
+}
