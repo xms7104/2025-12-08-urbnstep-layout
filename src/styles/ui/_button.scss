@@ -29,13 +29,13 @@
 
 .btn-product {
     @media (max-width: 768px) {
-        @include button-color(productList);
+        @include button_color(productList);
     }
 }
 
-.btn-story {
+.btn-story{
     @media (max-width: 768px) {
-        @include button-color(story);
+        @include button_color(story);
     }
 }
 
