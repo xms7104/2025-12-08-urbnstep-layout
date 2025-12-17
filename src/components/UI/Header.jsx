@@ -15,6 +15,11 @@ function Header(){
                 </Link>
             </div>
             <div className='user_button_block'>
+                <button className='header_collect_button'>
+                    <Link to="/collect">
+                        <i className="bi bi-heart"></i>
+                    </Link>
+                </button>
                 <button className='user_button'>
                     <i className="bi bi-person"></i>
                 </button>
