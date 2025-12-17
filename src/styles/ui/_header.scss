@@ -37,6 +37,9 @@
 .user_button_block{
     order: 3;
     padding: 12px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @media (max-width: 768px) {
         order: 2;
@@ -48,4 +51,12 @@
     border: 0px;
     background: transparent;
     cursor: pointer;
+}
+
+.header_collect_button{
+    padding: 12px 12px;
+    border: 0px;
+    background: transparent;
+    cursor: pointer;
+    margin-left: 12px;
 }
